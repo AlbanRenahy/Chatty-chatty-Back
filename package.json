@@ -6,6 +6,11 @@
   "repository": "git@github.com:AlbanRenahy/Chatty-chatty-Back.git",
   "author": "AlbanRenahy <albanrenahy.pro@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "save-deps": "rm -rf node_modules && npm update --save && npm update --save-dev",
+    "start:server": "node index.js",
+    "serve": "nodemon index.js"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.3.1",
