@@ -4,14 +4,14 @@ const app = express();
 
 const user = require('./routes/profil');
 
-const matchs = require ('./routes/matchs');
+const matchs = require ('./routes/matching');
 
 
 app.use(express.json());
 
 app.use('/profil', user);
 
-app.use('/match', matchs);
+app.use('/matching', matching);
 
 app.get("/", (req, res) => res.send("Chatt-chatty API"));
 
